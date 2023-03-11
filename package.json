@@ -27,6 +27,10 @@
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbalves1/pluginvue2.git"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
