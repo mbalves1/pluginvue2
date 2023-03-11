@@ -1,7 +1,9 @@
 import MyLoading from "@/components/MyLoading.vue";
 
-export default {
-  install(Vue) {
+export default (() => {
+  const installable = MyLoading; 
+  
+  installable.install = (Vue) => {
     Vue.prototype.$loading = {
       show() {
         const loadingComponent = Vue.extend(MyLoading);
@@ -20,5 +22,6 @@ export default {
         }
       },
     };
-  },
-};
+  }
+  return installable;
+})();
