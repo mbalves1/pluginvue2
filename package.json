@@ -8,6 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/loading-vuetify-m.ssr.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
